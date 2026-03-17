@@ -21,8 +21,11 @@ A console-based Employee Management System built using Java and OOP concepts.
 2. Run:
    java Main
 
+## 🔐 Login Feature
+- Username: admin
+- Password: 1234
+
 ## 🚀 Future Improvements
-- Login System
 - Database (MySQL) Integration
 - GUI (JavaFX / Swing)
 
