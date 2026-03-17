@@ -3,6 +3,19 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
+        Login login = new Login();
+
+        System.out.println("===== Login =====");
+        System.out.print("Enter Username: ");
+        String user = scanner.nextLine();
+        System.out.print("Enter Password: ");
+        String pass = scanner.nextLine();
+        if(!login.authenticate(user, pass)) {
+            System.out.println("Invalid Credentials! Exiting...");
+            return;
+        }
+        System.out.println("Login Successful!\n");
+
         ArrayList<Employee> employees = new ArrayList<>();
         System.out.println("\n------ WELCOME TO EMPLOYEE MANAGEMENT SYSTEM ------");
         while(true) {
